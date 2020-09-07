@@ -20,7 +20,7 @@ services:
   db:
     image: mysql:5.7
     ports:
-      - '3306:3306'
+      - '3316:3306'
     environment:
       MYSQL_DATABASE: db_name
       MYSQL_USER: db_user
@@ -29,4 +29,3 @@ services:
       TZ: 'Asia/Tokyo'
     volumes:
       - docker-volume:/var/lib/mysql
-    
